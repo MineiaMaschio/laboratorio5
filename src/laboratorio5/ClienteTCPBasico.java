@@ -15,7 +15,9 @@ public class ClienteTCPBasico {
 	      PrintStream out = new PrintStream( cliente.getOutputStream() );
           BufferedReader in = new BufferedReader( new InputStreamReader( cliente.getInputStream() ) );
 	      
-          out.println( "GET " + " USERS 4268:ohfsp " + " HTTP/1.0" );
+          String t = "GET MESSAGE 4268: ohfsp";
+          
+          out.println(t);
           out.println();
           
           String line = in.readLine();
