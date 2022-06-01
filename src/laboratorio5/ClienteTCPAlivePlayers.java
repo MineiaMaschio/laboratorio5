@@ -15,7 +15,7 @@ public class ClienteTCPBasico {
 	      PrintStream out = new PrintStream( cliente.getOutputStream() );
           BufferedReader in = new BufferedReader( new InputStreamReader( cliente.getInputStream() ) );
 	      
-          String t = "GET MESSAGE 4268:ohfsp";
+          String t = "GET PLAYERS 4268:ohfsp";
           
           out.println(t);
           out.println();
